@@ -1,0 +1,643 @@
+@-moz-document domain("whatsapp.com") {
+/*Theme made by RaitaroH @https://github.com/RaitaroH/WhatsApp-DeepDark*/
+	
+/*GNU General Public License v3.0*/
+  
+/*1.0.0*/
+	
+	/*Main color variables*/
+	:root
+	{
+		/*User colors*/
+		--main-color: #00ADEE;
+		--main-background: #111111;
+		--second-background: #181818;
+		--hover-background: #232323;
+		--main-text: #EFF0F1;
+		--dimer-text: #CCCCCC;
+
+		/*DeepDark colors*/
+		/*
+		--main-color: #00adee;
+		--main-background: #111111;
+		--second-background: #181818; 
+		--hover-background: #232323;
+		--main-text: #eff0f1;
+		--dimer-text: #CCCCCC;
+		*/
+
+		/*KDE colors*/
+		/*
+		--main-color: #3DAEE9;
+		--main-background: #232629;
+		--second-background: #2a2e32;
+		--hover-background: #31363b;
+		--main-text: #eff0f1;
+		--dimer-text: #bdc3c7;
+		*/
+
+		/*Vertex Dark colors*/
+		/*
+		--main-color: #4080fb;
+		--main-background: #2B2B2C;
+		--second-background: #353638;
+		--hover-background: #515254;
+		--main-text: #F3F3F5;
+		--dimer-text: #AEAFB0;
+		*/
+
+		/*Arc Dark colors*/
+		/*
+		--main-color: #5294E2;
+		--main-background: #343944;
+		--second-background: #383C4A;
+		--hover-background: #414A59;
+		--main-text: #C1C8D1;
+		--dimer-text: #B3BAC5;
+		*/
+
+		/*Firefox Dark colors*/
+		/*
+		--main-color: #5675B9;
+		--main-background: #272B35;
+		--second-background: #181D20;
+		--hover-background: #353A44;
+		--main-text: #E3EEF9;
+		--dimer-text: #606376;
+		*/
+		
+		/*Firefox57 Dark colors*/
+		/*
+		--main-color: #4080FB;
+		--main-background: #0C0C0D;
+		--second-background: #252526;
+		--hover-background: #323234;
+		--main-text: #F9F9FA;
+		--dimer-text: #D0D0D0;
+		*/
+
+		/*Discord colors*/
+		/*
+		--main-color: #7289DA;
+		--main-background: #1E2124;
+		--second-background: #2F3136;
+		--hover-background: #484B51;
+		--main-text: #FFFFFF;
+		--dimer-text: #ADA8AA;
+		*/
+
+		/*YouTube dark colors*/
+		/*
+		--main-color: #E52117;
+		--main-background: #111111;
+		--second-background: #232323;
+		--hover-background: #343434;
+		--main-text: #E1E1E1;
+		--dimer-text: #7F7F7F;
+		*/
+
+		/*Mint-Y-Dark colors*/
+		/*
+		--main-color: #9AB87C;
+		--main-background: #2F2F2F;
+		--second-background: #383838;
+		--hover-background: #404040;
+		--main-text: #FFFFFF;
+		--dimer-text: #D5DADA;
+		*/
+		
+		/*9anime colors*/
+		/*
+		--main-color: #723f8c;
+		--main-background: #0B0A0D;
+		--second-background: #17151C;
+		--hover-background: #1E1C25;
+		--main-text: #B4B4B4;
+		--dimer-text: #747474;
+		*/
+		
+		/*Black and white*/
+		/*
+		--main-color: #ffffff;
+		--main-background: #000000;
+		--second-background: #0a0a0a;
+		--hover-background: #0f0f0f;
+		--main-text: #b4b4b4;
+		--dimer-text: #828282;
+		*/
+		
+		/*Yellow (colors from petrocompletions)*/
+		/*
+		--main-color: #FFC700;
+		--main-background: #141414;
+		--second-background: #202222;
+		--hover-background: #353838;
+		--main-text: #EFF0F1;
+		--dimer-text: #9F9999;
+		*/
+		
+		/*Yellow 2*/
+		/*
+		--main-color: #ffc700;
+		--main-background: #0a0800;
+		--second-background: #0c0a04;
+		--hover-background: #0f0d05;
+		--main-text: #fffdf5;
+		--dimer-text: #fff8e1;
+		*/
+		
+		/*Ubuntu grey colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #312D2A;
+		--second-background: #3D3C38; 
+		--hover-background: #59564D;
+		--main-text: #F2F1EF;
+		--dimer-text: #E6E5E3;
+		*/
+		
+		/*Ubuntu purple colors*/
+		/*
+		--main-color: #EF7847;
+		--main-background: #2C071A;
+		--second-background: #430B28; 
+		--hover-background: #520D30;
+		--main-text: #F2F1EF;
+		--dimer-text: #E6E5E3;
+		*/
+		
+		/*Orange*/
+		/*
+		--main-color: #ff6905;
+		--main-background: #0a0400;
+		--second-background: #0e0702;
+		--hover-background: #110903;
+		--main-text: #fff9f5;
+		--dimer-text: #ffede1;
+		*/
+		
+		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
+		/*
+		--main-color: #EF7D6C;
+		--main-background: #332222;
+		--second-background: #2A1B1B;
+		--hover-background: #863B2F;
+		--main-text: #EFB26C;
+		--dimer-text: #986E3F;
+		*/
+	}
+
+	/*Changed text highlight*/
+	::selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+	::-moz-selection
+	{
+		background: var(--main-color) !important;
+		color: var(--main-text) !important;
+	}
+
+	/*Links*/
+ 	a
+ 	{
+		outline-color: var(--main-color) !important;
+	}
+	a, a:visited
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	a:hover
+	{
+		opacity: 1;
+	}
+   
+	
+	/*Removing text decorations*/
+	*
+	{
+		text-decoration: none !important;
+	}
+
+	body, html, .pane-chat-footer, #startup, #initial_startup, .backdrop.backdrop-cover
+	{
+		background-color: var(--second-background) !important;
+		color: var(--dimer-text) !important;
+	}
+	progress
+	{
+		color: var(--main-color) !important;
+		background-color: var(--main-text) !important;
+	}
+	progress[value]::-moz-progress-bar
+	{
+		background-color: var(--main-color) !important;
+	}
+	.progress .path
+	{
+		stroke: var(--main-color) !important;
+	}
+	/*Not loggin in*/
+	.popup
+	{
+		background-color: var(--second-background) !important;
+	}
+	.popup-title
+	{
+		color: var(--main-text) !important;
+	}
+	.popup hr
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.popup .text-tip a, .popup .text-tip
+	{
+		color: var(--dimer-text) !important;
+	}
+	.btn-plain
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	.btn-default
+	{
+		background-color: var(--main-color) !important;
+		opacity: .9;
+		color: var(--main-text) !important;
+	}
+	.btn-plain:hover, .btn-default:hover
+	{
+		opacity: 1 !important;
+	}
+
+	/*Header*/
+	.pane-header.pane-list-header, .pane-header
+	{
+		background-color: var(--second-background) !important;
+	}
+	.pane-chat-header
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.chat-title, .header-title
+	{
+		color: var(--main-text) !important;
+	}
+	.Gd51Q._3sgkv
+	{
+		color: var(--dimer-text) !important;
+	}
+
+
+	/*Buttons*/
+	button span svg path, button
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+		opacity: 1 !important;
+	}
+	button:hover span svg path
+	{
+		fill: var(--main-color) !important;
+	}
+	.attach-menu-container g path, .attach-menu-container:hover g path
+	{
+		fill: var(--second-background) !important;
+	}
+
+
+	/*Drowpdown menus*/
+	.dropdown, .dropdown-picker
+	{
+		background-color: var(--second-background) !important;
+	}
+	.dropdown-item-action
+	{
+		color: var(--main-text) !important;
+	}
+	.dropdown-item-text.dropdown-item-hover, .dropdown-item-text.dropdown-item-hover .dropdown-item-action
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+
+	
+	/*Sidebar*/
+	.chat, .chatlist-main, .chatlist-panel .chatlist-panel-body
+	{
+		background-color: var(--second-background) !important;
+	}
+	.chatlist .chat:hover, .chatlist .chat.hover, .chatlist .chat.active
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+		box-shadow: none !important;
+	}
+	.chatlist .chat-body, .chatlist .header-body, .chatlist .chat:hover .chat-body, .chatlist .chat:hover .header-body, .chatlist .chat.hover .chat-body, .chatlist .chat.hover .header-body, .chatlist .chat:hover:after,.chatlist .chat.hover:after,.chatlist .chat.active:after
+	{
+		border-color: var(--hover-background) !important;
+		box-shadow: none !important;
+	}
+	.chat-meta, .chat-secondary, .header-secondary
+	{
+		color: var(--dimer-text) !important;
+	}
+	.avatar
+	{
+		background-color: var(--hover-background) !important;
+	}
+
+	/*typing*/
+	.vdXUe
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*notification*/
+	html[dir] .OUeyt
+	{
+		background-color: var(--main-color) !important;
+	}
+	.OUeyt
+	{
+		color: var(--main-text) !important;
+	}
+
+	/*icons near the message*/
+	.chat-status span svg path
+	{
+		fill: var(--main-color) !important;
+	}
+
+	/*Search*/
+	.chatlist-panel-search, .cont-input-search, .list-search .input-search
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.section-header
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-color) !important;
+	}
+	._3WZoe
+	{
+		color: var(--main-text) !important;
+	}
+	/*Matching*/
+	.matched-text
+	{
+		color: var(--main-color) !important;
+	}
+
+	/*Right pane*/
+	/*Right search*/
+	.drawer-chat-search .chatlist-panel-body, .drawer-header
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+
+	/*Contact info*/
+	.drawer, .drawer-section.well, .well, .well-simple, .well-chat
+	{
+		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.well-chat-name
+	{
+		color: var(--main-text) !important;
+	}
+	.title
+	{
+		color: var(--dimer-text) !important;
+	}
+	.drawer-section-title
+	{
+		color: var(--main-color) !important;
+	}
+	.row.row-drawer-item .row-body
+	{
+		border-color: var(--hover-background) !important;
+	}
+
+
+	/*Edit picture and such*/
+	.text-input .textinput-controls .control-button-container .text-input-icon span svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+.text-input .textinput-controls .control-button-container .text-input-icon:hover span svg path
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+
+	/*Intro*/
+	.intro, .intro::after
+	{
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.intro-image
+	{
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/WhatsApp-DeepDark/master/Images/intro-image.png) !important;
+	}
+	.intro .intro-title
+	{
+		color: var(--main-color) !important;
+	}
+	.hint, .media-gallery-empty, .well-chat-secondary, .empty-text, .intro .intro-text, .intro .intro-secondary-text, .drawer-blocked-hint, .qr-wrapper .wifi-hint
+	{
+		color: var(--main-text) !important;
+	}
+
+	/*Comments*/
+	.pane-chat-tile-container
+	{
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.message-out, .message-out .document-body
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.message-in
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.status-icon span svg path, .doc-state span svg path, .doc-state span svg path, ._3kN0h svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+	.message-in .tail-container, .message-out .tail-container
+	{
+		display: none !important;
+	}
+	.selectable-text, .document-text .ellipsify, .document-text .starred-title-main, .document-text .multi-count
+	{
+		color: var(--main-text) !important;
+	}
+	.message-meta, .document-meta, .audio-duration
+	{
+		color: var(--dimer-text) !important;
+	}
+	.message-out .selectable-text
+	{
+		color: var(--main-color) !important;
+	}
+	html[dir=ltr] ._1i1U7.jZ4tp, html[dir=ltr] ._1i1U7._2DNgV
+	{
+		background: var(--hover-background) !important;
+	}
+	.message-out .audio-state-default .audio-progress, .message-out .audio-state-default .audio-track::-moz-range-thumb
+	{
+		background: var(--main-color) !important;
+	}
+	.message-out .audio-track::-moz-range-track
+	{
+		background: var(--dimer-text) !important;
+	}
+	.QnDup > span:nth-child(1) > svg:nth-child(1) > path:nth-child(2)
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+
+	/*Select messages*/
+	.multi-controls
+	{
+		background-color: var(--hover-background) !important;
+	}
+	._1VD7W
+	{
+		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
+	}
+
+	/*Message compose*/
+	.block-compose
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.block-compose .input-container
+	{
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+
+	/*Emoji*/
+	.menu-tabs-emoji
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.menu-tabs-marker
+	{
+		background-color: var(--main-color) !important;
+	}
+	.menu-tabs-emoji .menu-tab span svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	.menu-tabs-emoji .menu-tab:hover span svg path
+	{
+		fill: var(--main-color) !important;
+	}
+	.compose-box-items-overlay-container, .emoji-search-row-input, .emoji-panel-body-container, .emoji-search, .dropdown-picker, .dropdown-picker .dropdown-nib, .emoji-panel-body-container, .emoji-search-row
+	{
+		background: var(--hover-background) !important;
+	}
+	.emoji-search-row, .emoji-panel-body
+	{
+		background: var(--second-background) !important;
+	}
+	.emoji-panel-title, input.input-emoji-search, ._3KEhc
+	{
+		color: var(--dimer-text) !important;
+	}
+	.compose-box-items-overlay-container
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.emojik.c0:hover
+	{
+		filter: brightness(120%);
+	}
+	/*gif*/
+	html[dir] ._2s3PU
+	{
+		background-color: var(--hover-background) !important;
+	}
+	
+	/*Date*/
+	.message-system
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	
+	/*Retry*/
+	html[dir] ._3dGYA
+	{
+		background-color: var(--hover-background) !important;
+	}
+	html[dir] ._3dGYA:hover span svg path
+	{
+		fill: var(--main-color) !important;
+	}
+	.Qf313
+	{
+		stroke: var(--main-color) !important;
+	}
+
+	/*Not read*/
+	html[dir] .L89LI
+	{
+		background-color: var(--second-background) !important;
+		color: var(--main-text) !important;
+	}
+	html[dir] ._1mq8g
+	{
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+
+	/*Go down*/
+	.incoming-msgs
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.incoming-msgs span svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	.incoming-msgs:hover span svg path
+	{
+		fill: var(--main-color) !important;
+	}
+
+
+	/*Image view*/
+	.media-viewer
+	{
+		background-color: var(--second-background) !important;
+	}
+	.media-content .media-caption
+	{
+		color: var(--dimer-text) !important;
+	}
+}
