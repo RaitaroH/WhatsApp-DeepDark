@@ -1,4 +1,5 @@
 @-moz-document domain("whatsapp.com") {
+	
 /*Theme made by RaitaroH @https://github.com/RaitaroH/WhatsApp-DeepDark*/
 	
 /*GNU General Public License v3.0*/
@@ -272,6 +273,25 @@
 		opacity: 1 !important;
 	}
 
+	/*Intro*/
+	.intro, .intro::after
+	{
+		background-color: var(--second-background) !important;
+		border: 1px solid var(--hover-background) !important;
+	}
+	.intro-image
+	{
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/WhatsApp-DeepDark/master/Images/intro-image.png) !important;
+	}
+	.intro .intro-title
+	{
+		color: var(--main-color) !important;
+	}
+	.hint, .media-gallery-empty, .well-chat-secondary, .empty-text, .intro .intro-text, .intro .intro-secondary-text, .drawer-blocked-hint, .qr-wrapper .wifi-hint
+	{
+		color: var(--main-text) !important;
+	}
+
 	/*Header*/
 	.pane-header.pane-list-header, .pane-header
 	{
@@ -431,29 +451,33 @@
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
-.text-input .textinput-controls .control-button-container .text-input-icon:hover span svg path
+	.text-input .textinput-controls .control-button-container .text-input-icon:hover span svg path
 	{
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
 	}
+	.text-input.active .input-wrapper
+	{
+		border-color: var(--main-color) !important;
+	}
 
-	/*Intro*/
-	.intro, .intro::after
+	/*New group*/
+	.new-group-button, .new-group-separator
 	{
-		background-color: var(--second-background) !important;
-		border: 1px solid var(--hover-background) !important;
+		background-color: var(--hover-background) !important;
+		border-color: var(--hover-background) !important;
 	}
-	.intro-image
+	html[dir] ._1jJLh
 	{
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/WhatsApp-DeepDark/master/Images/intro-image.png) !important;
+		background-color: var(--main-color) !important;
 	}
-	.intro .intro-title
+	.new-group-search, .new-group-contacts, .drawer-section-main
 	{
-		color: var(--main-color) !important;
+		background-color: transparent !important;
 	}
-	.hint, .media-gallery-empty, .well-chat-secondary, .empty-text, .intro .intro-text, .intro .intro-secondary-text, .drawer-blocked-hint, .qr-wrapper .wifi-hint
+	.input-line
 	{
-		color: var(--main-text) !important;
+		border-color: var(--main-color) !important;
 	}
 
 	/*Comments*/
@@ -475,7 +499,7 @@
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
-	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path
+	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path
 	{
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
@@ -571,12 +595,22 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-	.emojik.c0:hover
+	.emojik.c0:hover, .emojik.c1:hover, .emojik.c2:hover, .emojik.c3:hover, .emojik.c4:hover, .emojik.c5:hover, .emojik.c6:hover, .emojik.c7:hover
 	{
 		filter: brightness(120%);
 	}
+	/*Tried to make the background of the emoji a bit less noticable*/
+	.emojik.c0, .emojik.c1, .emojik.c2, .emojik.c3, .emojik.c4, .emojik.c5, .emojik.c6, .emojik.c7
+	{
+		border-radius: 100%;
+	}
 	/*gif*/
 	html[dir] ._2s3PU
+	{
+		background-color: var(--hover-background) !important;
+	}
+
+	.dropdown-emoji.dropdown-inverse-vertical .dropdown-nib
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -599,7 +633,7 @@
 	}
 	.Qf313
 	{
-		stroke: var(--main-color) !important;
+		stroke: var(--main-text) !important;
 	}
 
 	/*Not read*/
@@ -632,12 +666,47 @@
 
 
 	/*Image view*/
-	.media-viewer
+	.media-viewer, .media-panel-header, .header-body
 	{
 		background-color: var(--second-background) !important;
 	}
-	.media-content .media-caption
+	.media-content .media-caption, .media-chat .chat-main, .media-chat .header-main, .text-input .label-text
 	{
 		color: var(--dimer-text) !important;
 	}
+	.drawer-header-offset, .btn-fill, .send-logs-screenshots .send-logs-screenshots-action
+	{
+		color: var(--main-text) !important;
+	}
+	.media-content .btn-round, .drawer-header-offset, .media-collection
+	{
+		background-color: var(--hover-background) !important;
+	}
+	span[title="Close"] svg path, .btn-round span svg path, .media-panel-tools .menu-item span svg path, .btn-fill span svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	span[title="Close"]:hover svg path, .btn-round:hover span svg path, .media-panel-tools .menu-item:hover span svg path, .btn-fill:hover span svg path, html[dir] ._3hV1n:hover span svg path
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+	.media-viewer-thumbs-container, .media-thumb.active .media-thumb-body
+	{
+		border-color: var(--hover-background) !important;
+	}
+	.btn-fill, .send-logs-screenshots .send-logs-screenshots-action
+	{
+		background-color: var(--second-background) !important;
+	}
+	.btn-fill:hover
+	{
+		color: var(--main-color) !important;
+	}
+	html[dir] ._3hV1n
+	{
+		background-color: var(--main-background) !important;
+	}
+	
 }
