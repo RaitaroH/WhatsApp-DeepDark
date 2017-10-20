@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.1*/
+/*1.0.2*/
 	
 	/*Main color variables*/
 	:root
@@ -491,6 +491,35 @@
 		border-color: var(--main-color) !important;
 	}
 
+	/*Settings*/
+	.chat-cell div span svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	.chat-cell:hover div span svg path, .chat.contact:hover .chat-controls svg path 
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+	.chatlist.list-icons .chat:hover:after, .chatlist.list-icons .chat:hover .chat-body, .chatlist.list-icons .chat:hover .header-body, .chatlist.list-icons .chat:hover .chat-avatar, html[dir] ._2ZnOp:last-child
+	{
+		border-color: var(--hover-background) !important;
+	}
+	select
+	{
+		color: var(--main-text) !important;
+		border-color: var(--hover-background) !important;
+	}
+	.select::before
+	{
+		color: var(--main-text) !important;
+	}
+	.drawer-blocked-button-add
+	{
+		border-color: var(--hover-background) !important;
+	}
+
 	/*New group*/
 	.new-group-button, .new-group-separator
 	{
@@ -737,6 +766,45 @@
 	html[dir] ._3hV1n
 	{
 		background-color: var(--main-background) !important;
+	}
+
+	
+	/*Send contacts*/
+	.drawer-header-popup, .drawer-controls-summary
+	{
+		background-color: var(--main-background) !important;
+		color: var(--main-text) !important;
+	}
+
+	/*Starred*/
+	.starred-msg-wrapper.current, .starred-msg-wrapper.active, .starred-msg-wrapper.active::after, .starred-msg-wrapper.active::before
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.starred-title-meta
+	{
+		color: var(--dimer-text) !important;
+	}
+	.starred-chevron-icon span svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	.starred-chevron-icon:hover span svg path
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+
+	/*Undo notification*/
+	.z5_OS
+	{
+		color: var(--main-color) !important;
+		opacity: .9;
+	}
+	.z5_OS:hover
+	{
+		opacity: 1 !important;
 	}
 	
 }
