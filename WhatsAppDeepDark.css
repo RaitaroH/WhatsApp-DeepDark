@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.0*/
+/*1.0.1*/
 	
 	/*Main color variables*/
 	:root
@@ -443,7 +443,37 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
-
+	
+	/*Right pane documents view*/
+	.menu-tabs.menu-tabs-lists, .starred-msg-wrapper:hover, .starred-msg-wrapper::before
+	{
+		background-color:  var(--hover-background) !important;
+	}
+	.menu-tabs.menu-tabs-lists::before
+	{
+		background-color: var(--main-color) !important;
+	}
+	.menu-tabs.menu-tabs-lists .menu-item, .link-preview-container .link-preview-source, .link-preview-container .link-preview-description
+	{
+		color: var(--dimer-text) !important;
+	}
+	.link-preview-container .link-preview-title
+	{
+		color: var(--main-text) !important;
+	}
+	.menu-tabs.menu-tabs-lists .menu-item:hover
+	{
+		color: var(--main-color) !important;
+	}
+	.message-out .link-preview-container, .starred-msg-wrapper .link-message.message, .message-in .link-preview-container, .starred-msg-wrapper .message-chat, .starred-msg-wrapper .message-location
+	{
+		background-color:  var(--main-background) !important;
+	}
+	span[data-icon="settings-blocked"] svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
 
 	/*Edit picture and such*/
 	.text-input .textinput-controls .control-button-container .text-input-icon span svg path
