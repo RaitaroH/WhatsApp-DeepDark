@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.4*/
+/*1.0.5*/
 	
 	/*Main color variables*/
 	:root
@@ -549,7 +549,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.message-in
+	.message-in, .message-in .document-body, .link-preview-container .link-preview-body
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -579,7 +579,8 @@
 	{
 		color: var(--main-color) !important;
 	}
-	html[dir=ltr] ._1i1U7.jZ4tp, html[dir=ltr] ._1i1U7._2DNgV
+	/*Options for messages*/
+	html[dir=ltr] ._1i1U7.jZ4tp, html[dir=ltr] ._1i1U7._2DNgV, html[dir=ltr] ._2Cju4.jZ4tp, html[dir=ltr] ._2Cju4._2DNgV
 	{
 		background: var(--hover-background) !important;
 	}
@@ -805,6 +806,49 @@
 	.z5_OS:hover
 	{
 		opacity: 1 !important;
+	}
+
+	
+	/*Reply*/
+	.compose-popup-panel, .compose-popup-panel .quoted-msg-status, .btn-background
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.quoted-msg-text
+	{
+		color: var(--dimer-text) !important;
+	}
+	.color-1
+	{
+		color: var(--main-color) !important;
+	}
+	.bg-color-1
+	{
+		background-color: var(--main-color) !important;
+	}
+	._3FwEk span svg path
+	{
+		fill: var(--main-text) !important;
+	}
+
+	/*Message info*/
+	.drawer-header-small
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.pane-preview, .chatlist.chatlist-group-msg
+	{
+		background-color: var(--second-background) !important;
+	}
+	.chatlist.chatlist-group-msg .drawer-section-title, .chatlist.chatlist-group-msg .drawer-section-footer, .chatlist.chatlist-group-msg .chat:hover
+	{
+		background-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
+	}
+	.group-msg-info-title-icon span svg path
+	{
+		fill: var(--main-text) !important;
 	}
 	
 }
