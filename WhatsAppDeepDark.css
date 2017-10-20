@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.3*/
+/*1.0.4*/
 	
 	/*Main color variables*/
 	:root
@@ -295,7 +295,7 @@
 	/*Header*/
 	.pane-header.pane-list-header, .pane-header
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--main-background) !important;
 	}
 	.pane-chat-header
 	{
