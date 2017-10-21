@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.6*/
+/*1.0.7*/
 	
 	/*Main color variables*/
 	:root
@@ -347,7 +347,7 @@
 	/*Sidebar*/
 	.chat, .chatlist-main, .chatlist-panel .chatlist-panel-body
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--main-background) !important;
 	}
 	.chatlist .chat:hover, .chatlist .chat.hover, .chatlist .chat.active
 	{
@@ -733,7 +733,7 @@
 	/*Image view*/
 	.media-viewer, .media-panel-header, .header-body
 	{
-		background-color: var(--second-background) !important;
+		background-color: var(--main-background) !important;
 	}
 	.media-content .media-caption, .media-chat .chat-main, .media-chat .header-main, .text-input .label-text
 	{
@@ -855,5 +855,14 @@
 	{
 		fill: var(--main-text) !important;
 	}
+	
+	
+	/*Group admin*/
+	.contact-marker-admin
+	{
+		background-color: var(--main-color) !important;
+		color: var(--main-color) !important;
+	}
+	
 	
 }
