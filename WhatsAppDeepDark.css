@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.8*/
+/*1.0.9*/
 	
 	/*Main color variables*/
 	:root
@@ -573,7 +573,12 @@
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
-	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path
+	span[data-icon="msg-check"] svg path
+	{
+		fill: var(--main-text) !important;
+		fill-opacity: 1 !important;
+	}
+	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path, span[data-icon="msg-dblcheck-ack"] svg path
 	{
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
@@ -852,19 +857,33 @@
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.pane-preview, .chatlist.chatlist-group-msg
+	.pane-preview, .chatlist.chatlist-group-msg, .drawer-info .chat-body
 	{
 		background-color: var(--second-background) !important;
+	}
+	.drawer-header-small
+	{
+		background-color: var(--main-background) !important;
 	}
 	.chatlist.chatlist-group-msg .drawer-section-title, .chatlist.chatlist-group-msg .drawer-section-footer, .chatlist.chatlist-group-msg .chat:hover
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.group-msg-info-title-icon span svg path
+	.group-msg-info-title-icon span svg path, .drawer-info .chat-body span[data-icon="status-dblcheck"] svg path
 	{
 		fill: var(--main-text) !important;
 	}
+	.drawer-info .chat-body span[data-icon="status-dblcheck-ack"] svg path
+	{
+		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+	.drawer-section-info .chat:not(:last-child)
+	{
+		border-color: var(--hover-background) !important;
+	}
+	
 	
 	
 	/*Group admin*/
