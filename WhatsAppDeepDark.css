@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.9*/
+/*1.1.0*/
 	
 	/*Main color variables*/
 	:root
@@ -425,17 +425,22 @@
 	
 	/*Right pane*/
 	/*Right search*/
-	.drawer-chat-search .chatlist-panel-body, .drawer-header
+	.drawer-chat-search .chatlist-panel-body, .drawer-header, .pane-chat
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
 	
-	.three .pane-chat-body, .three .pane-chat-footer
+	.three .pane-chat-body, .three .pane-chat-footer, .three .pane-chat-header
 	{
 		border-color: var(--hover-background) !important;
 	}
-
+	
+	.app
+	{
+		background: var(--second-background) !important;
+	}
+	
 	/*Contact info*/
 	.drawer, .drawer-section.well, .well, .well-simple, .well-chat
 	{
@@ -615,6 +620,11 @@
 	.QnDup > span:nth-child(1) > svg:nth-child(1) > path:nth-child(2)
 	{
 		fill: var(--main-color) !important;
+		fill-opacity: 1 !important;
+	}
+	.QnDup > span:nth-child(1) > svg:nth-child(1) > path:nth-child(1)
+	{
+		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
 
