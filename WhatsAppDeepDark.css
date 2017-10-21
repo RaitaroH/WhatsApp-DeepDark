@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.5*/
+/*1.0.6*/
 	
 	/*Main color variables*/
 	:root
@@ -418,6 +418,11 @@
 	.drawer-chat-search .chatlist-panel-body, .drawer-header
 	{
 		background-color: var(--second-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	
+	.three .pane-chat-body, .three .pane-chat-footer
+	{
 		border-color: var(--hover-background) !important;
 	}
 
