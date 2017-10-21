@@ -297,6 +297,10 @@
 	{
 		background-color: var(--main-background) !important;
 	}
+	.drawer-header .drawer-title
+	{
+		background-color: var(--second-background) !important;
+	}
 	.pane-chat-header
 	{
 		border-color: var(--hover-background) !important;
