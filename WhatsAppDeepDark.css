@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.0.7*/
+/*1.0.8*/
 	
 	/*Main color variables*/
 	:root
@@ -411,12 +411,18 @@
 	{
 		color: var(--main-text) !important;
 	}
+	/*For the white transitioning*/
+	.list-search.active
+	{
+		background-color: var(--main-background) !important;
+	}
 	/*Matching*/
 	.matched-text
 	{
 		color: var(--main-color) !important;
 	}
 
+	
 	/*Right pane*/
 	/*Right search*/
 	.drawer-chat-search .chatlist-panel-body, .drawer-header
@@ -436,7 +442,7 @@
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.well-chat-name
+	.well-chat-name, .drawer-header
 	{
 		color: var(--main-text) !important;
 	}
