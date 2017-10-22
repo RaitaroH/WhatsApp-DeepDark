@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.1.0*/
+/*1.1.1*/
 	
 	/*Main color variables*/
 	:root
@@ -510,6 +510,14 @@
 	{
 		border-color: var(--main-color) !important;
 	}
+	.chatlist.list-identity .chat, .chatlist.list-icons .chat-cell, .chatlist .chat
+	{
+		background-color:  var(--second-background) !important;
+	}
+	.chatlist.list-identity .chat:hover, .chatlist.list-icons .chat-cell:hover, .chatlist .chat:hover
+	{
+		background-color:  var(--hover-background) !important;
+	}
 
 	/*Settings*/
 	.chat-cell div span svg path
@@ -862,12 +870,12 @@
 	}
 
 	/*Message info*/
-	.drawer-header-small
+	.drawer-header-small, .drawer-info .chat-body:hover
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 	}
-	.pane-preview, .chatlist.chatlist-group-msg, .drawer-info .chat-body
+	.pane-preview, .chatlist.chatlist-group-msg, .drawer-info .chat-body, .drawer-info .chat
 	{
 		background-color: var(--second-background) !important;
 	}
@@ -895,11 +903,10 @@
 	}
 	
 	
-	
 	/*Group admin*/
 	.contact-marker-admin
 	{
-		background-color: var(--main-color) !important;
+		border-color: var(--main-color) !important;
 		color: var(--main-color) !important;
 	}
 	
