@@ -4,7 +4,7 @@
 	
 /*GNU General Public License v3.0*/
   
-/*1.1.1*/
+/*1.1.2*/
 	
 	/*Main color variables*/
 	:root
@@ -591,7 +591,7 @@
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
-	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path, span[data-icon="msg-dblcheck-ack"] svg path
+	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path, span[data-icon="msg-dblcheck-ack"] svg path, span[data-icon="msg-dblcheck-ack-light"] svg path
 	{
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
