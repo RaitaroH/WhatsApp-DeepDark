@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.3*/
+/*1.1.4*/
 
 	/*Main color variables*/
 	:root
@@ -274,20 +274,20 @@
 	}
 
 	/*Intro*/
-	.intro, .intro::after
+	.intro, .intro::after, html[dir] ._3qlW9, html[dir] ._3qlW9::after
 	{
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
-	.intro-image
+	.intro-image, [data-asset-intro-image]
 	{
 		background-image: url(https://raw.githubusercontent.com/RaitaroH/WhatsApp-DeepDark/master/Images/intro-image.png) !important;
 	}
-	.intro .intro-title
+	.intro .intro-title, .iHhHL
 	{
 		color: var(--main-color) !important;
 	}
-	.hint, .media-gallery-empty, .well-chat-secondary, .empty-text, .intro .intro-text, .intro .intro-secondary-text, .drawer-blocked-hint, .qr-wrapper .wifi-hint
+	.hint, .media-gallery-empty, .well-chat-secondary, .empty-text, .intro .intro-text, .intro .intro-secondary-text, .drawer-blocked-hint, .qr-wrapper .wifi-hint, ._1ClcF
 	{
 		color: var(--main-text) !important;
 	}
@@ -313,16 +313,20 @@
 	{
 		color: var(--dimer-text) !important;
 	}
+	.pane-chat-header .chat-body
+	{
+		border: none !important;
+	}
 
 
 	/*Buttons*/
-	button span svg path, button
+	button span svg path, button, [role="button"] span svg path
 	{
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 		opacity: 1 !important;
 	}
-	button:hover span svg path
+	button:hover span svg path, [role="button"]:hover span svg path
 	{
 		fill: var(--main-color) !important;
 	}
@@ -333,15 +337,15 @@
 
 
 	/*Drowpdown menus*/
-	.dropdown, .dropdown-picker
+	.dropdown, .dropdown-picker, html[dir] ._2uLFU, html[dir] ._1ArIP
 	{
 		background-color: var(--second-background) !important;
 	}
-	.dropdown-item-action
+	.dropdown-item-action, ._2dGjP
 	{
 		color: var(--main-text) !important;
 	}
-	.dropdown-item-text.dropdown-item-hover, .dropdown-item-text.dropdown-item-hover .dropdown-item-action
+	.dropdown-item-text.dropdown-item-hover, .dropdown-item-text.dropdown-item-hover .dropdown-item-action, html[dir] ._28zBA._14ou2, html[dir] ._28zBA._14ou2 ._2dGjP
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-color) !important;
@@ -359,10 +363,14 @@
 		border-color: var(--hover-background) !important;
 		box-shadow: none !important;
 	}
-	.chatlist .chat-body, .chatlist .header-body, .chatlist .chat:hover .chat-body, .chatlist .chat:hover .header-body, .chatlist .chat.hover .chat-body, .chatlist .chat.hover .header-body, .chatlist .chat:hover:after,.chatlist .chat.hover:after,.chatlist .chat.active:after
+	.chatlist .chat-body, .chatlist .header-body, .chatlist .chat:hover .chat-body, .chatlist .chat:hover .header-body, .chatlist .chat.hover .chat-body, .chatlist .chat.hover .header-body, .chatlist .chat:hover:after,.chatlist .chat.hover:after,.chatlist .chat.active:after, .chat-body, .header-body, .chat.active .chat-body, .chat.active .header-body
 	{
 		border-color: var(--hover-background) !important;
 		box-shadow: none !important;
+	}
+	.chat:hover::after, .chat.hover::after, .chat.active::after
+	{
+		border-color: none !important;
 	}
 	.chat-meta, .chat-secondary, .header-secondary
 	{
@@ -447,7 +455,7 @@
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.well-chat-name, .drawer-header
+	.well-chat-name, .drawer-header, .drawer-header-small .drawer-title
 	{
 		color: var(--main-text) !important;
 	}
@@ -496,27 +504,35 @@
 	}
 
 	/*Edit picture and such*/
-	.text-input .textinput-controls .control-button-container .text-input-icon span svg path
+	.text-input .textinput-controls .control-button-container .text-input-icon span svg path, .btn-context span svg path, span[data-icon="pencil"] svg path, span[data-icon="emoji-input"] svg path, span[data-icon="checkmark"] svg path
 	{
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
-	.text-input .textinput-controls .control-button-container .text-input-icon:hover span svg path
+	.text-input .textinput-controls .control-button-container .text-input-icon:hover span svg path, .btn-context:hover span svg path, span[data-icon="pencil"]:hover svg path, span[data-icon="emoji-input"]:hover svg path, span[data-icon="checkmark"]:hover svg path
 	{
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
 	}
-	.text-input.active .input-wrapper
+	.text-input.active .input-wrapper, html[dir] ._31WRs ._1DTd4
 	{
 		border-color: var(--main-color) !important;
 	}
-	.chatlist.list-identity .chat, .chatlist.list-icons .chat-cell, .chatlist .chat
+	.chatlist.list-identity .chat, .chatlist.list-icons .chat-cell, .chatlist .chat, html[dir] ._1CRb5
 	{
 		background-color:  var(--second-background) !important;
 	}
-	.chatlist.list-identity .chat:hover, .chatlist.list-icons .chat-cell:hover, .chatlist .chat:hover
+	.chatlist.list-identity .chat:hover, .chatlist.list-icons .chat-cell:hover, .chatlist .chat:hover, .chat:hover, .chat.active
 	{
 		background-color:  var(--hover-background) !important;
+	}
+	._1sYdX
+	{
+		color: var(--main-color) !important;
+	}
+	.Cpiae
+	{
+		color: var(--dimer-text) !important;
 	}
 
 	/*Settings*/
@@ -562,9 +578,17 @@
 	{
 		background-color: transparent !important;
 	}
+	html[dir] ._1AKfk
+	{
+		background-color: var(--second-background) !important;
+	}
 	.input-line
 	{
 		border-color: var(--main-color) !important;
+	}
+	._1AKfk
+	{
+		color: var(--main-color) !important;
 	}
 
 	/*Comments*/
@@ -604,7 +628,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.message-meta, .document-meta, .audio-duration
+	.message-meta, .document-meta, .audio-duration, ._1DZAH
 	{
 		color: var(--dimer-text) !important;
 	}
@@ -918,6 +942,4 @@
 		border-color: var(--main-color) !important;
 		color: var(--main-color) !important;
 	}
-
-
 }
