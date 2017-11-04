@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.5*/
+/*1.1.6*/
 
 	/*Main color variables*/
 	:root
@@ -518,11 +518,11 @@
 	{
 		border-color: var(--main-color) !important;
 	}
-	.chatlist.list-identity .chat, .chatlist.list-icons .chat-cell, .chatlist .chat, html[dir] ._1CRb5
+	.chatlist.list-identity .chat, .chatlist.list-icons .chat-cell, .chatlist .chat, html[dir] ._1CRb5, html[dir] ._1CkkN, .chat-identity.chat, html[dir] .ZwkQK
 	{
 		background-color:  var(--second-background) !important;
 	}
-	.chatlist.list-identity .chat:hover, .chatlist.list-icons .chat-cell:hover, .chatlist .chat:hover, .chat:hover, .chat.active
+	.chatlist.list-identity .chat:hover, .chatlist.list-icons .chat-cell:hover, .chatlist .chat:hover, .chat:hover, .chat.active, html[dir] ._1CkkN:hover, .starred-msg-wrapper.hover::before, .starred-msg-wrapper.hover::after
 	{
 		background-color:  var(--hover-background) !important;
 	}
@@ -530,9 +530,13 @@
 	{
 		color: var(--main-color) !important;
 	}
-	.Cpiae
+	.Cpiae, ._3LL06
 	{
 		color: var(--dimer-text) !important;
+	}
+	html[dir] ._1CkkN + ._1CkkN ._10xEB, html[dir] ._1CkkN:hover + ._1CkkN::before
+	{
+		border-color:  var(--hover-background) !important;
 	}
 
 	/*Settings*/
@@ -605,7 +609,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.status-icon span svg path, .doc-state span svg path, .doc-state span svg path, ._3kN0h svg path
+	.status-icon span svg path, .doc-state span svg path, .doc-state span svg path, ._3kN0h svg path, .message-in svg path, .message-out svg path, span[data-icon="star-in"] svg path
 	{
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
@@ -615,7 +619,7 @@
 		fill: var(--main-text) !important;
 		fill-opacity: 1 !important;
 	}
-	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path, span[data-icon="msg-dblcheck-ack"] svg path, span[data-icon="msg-dblcheck-ack-light"] svg path
+	.btn-forward-chat:hover span svg path, .doc-state:hover span svg path, ._3kN0h:hover svg path, ._38oIx:hover svg path, span[data-icon="msg-dblcheck-ack"] svg path, span[data-icon="msg-dblcheck-ack-light"] svg path, .message-in span:hover svg path, .message-out span:hover svg path
 	{
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
@@ -646,9 +650,17 @@
 		opacity: 1 !important;
 	}
 	/*Options for messages*/
-	html[dir=ltr] ._1i1U7.jZ4tp, html[dir=ltr] ._1i1U7._2DNgV, html[dir=ltr] ._2Cju4.jZ4tp, html[dir=ltr] ._2Cju4._2DNgV
+	html[dir=ltr] ._1i1U7.jZ4tp, html[dir=ltr] ._1i1U7._2DNgV, html[dir=ltr] ._2Cju4.jZ4tp, html[dir=ltr] ._2Cju4._2DNgV, html[dir] ._2flas
 	{
 		background: var(--hover-background) !important;
+	}
+	.pane-chat-color-bg
+	{
+		background: var(--second-background) !important;
+	}
+	html[dir] .Um7sh
+	{
+		background: transparent !important;
 	}
 	.message-out .audio-state-default .audio-progress, .message-out .audio-state-default .audio-track::-moz-range-thumb
 	{
@@ -903,7 +915,7 @@
 	}
 
 	/*Message info*/
-	.drawer-header-small, .drawer-info .chat-body:hover
+	.drawer-header-small, .drawer-info .chat-body:hover, html[dir] ._2zkF3
 	{
 		background-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
@@ -930,7 +942,7 @@
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
 	}
-	.drawer-section-info .chat:not(:last-child)
+	.drawer-section-info .chat:not(:last-child), html[dir] ._3YwRO
 	{
 		border-color: var(--hover-background) !important;
 	}
