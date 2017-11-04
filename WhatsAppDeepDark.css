@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.4*/
+/*1.1.5*/
 
 	/*Main color variables*/
 	:root
@@ -257,18 +257,18 @@
 	{
 		color: var(--dimer-text) !important;
 	}
-	.btn-plain
+	.btn-plain, ._1qi0v
 	{
 		color: var(--main-color) !important;
 		opacity: .9;
 	}
-	.btn-default
+	.btn-default, html[dir] .PNlAR
 	{
 		background-color: var(--main-color) !important;
 		opacity: .9;
 		color: var(--main-text) !important;
 	}
-	.btn-plain:hover, .btn-default:hover
+	.btn-plain:hover, .btn-default:hover, ._1qi0v:hover, html[dir] .PNlAR:hover
 	{
 		opacity: 1 !important;
 	}
@@ -370,7 +370,7 @@
 	}
 	.chat:hover::after, .chat.hover::after, .chat.active::after
 	{
-		border-color: none !important;
+		border: none !important;
 	}
 	.chat-meta, .chat-secondary, .header-secondary
 	{
