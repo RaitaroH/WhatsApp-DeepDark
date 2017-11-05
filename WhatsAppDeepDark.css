@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.6*/
+/*1.1.7*/
 
 	/*Main color variables*/
 	:root
@@ -953,5 +953,16 @@
 	{
 		border-color: var(--main-color) !important;
 		color: var(--main-color) !important;
+	}
+
+
+	/*Default avatar svgs*/
+	div[class="avatar-default"] span svg path[fill="#DFE5E7"]
+	{
+		fill: var(--second-background) !important;
+	}
+	div[class="avatar-default"] span svg g[fill="#FFF"] path, div[class="avatar-default"] span svg path[fill="#FFF"]
+	{
+		fill: var(--main-color) !important;
 	}
 }
