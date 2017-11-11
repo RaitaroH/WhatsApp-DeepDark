@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.7*/
+/*1.1.8*/
 
 	/*Main color variables*/
 	:root
@@ -703,6 +703,14 @@
 		background-color: var(--second-background) !important;
 		border: 1px solid var(--hover-background) !important;
 	}
+	
+	
+	/*Forward*/
+	html[dir] .iHLo1
+	{
+		background-color: var(--second-background) !important;
+	}
+	
 
 	/*Emoji*/
 	.menu-tabs-emoji
@@ -964,5 +972,12 @@
 	div[class="avatar-default"] span svg g[fill="#FFF"] path, div[class="avatar-default"] span svg path[fill="#FFF"]
 	{
 		fill: var(--main-color) !important;
+	}
+	
+	
+	/*Loading svg*/
+	circle
+	{
+		stroke: var(--main-color) !important;
 	}
 }
