@@ -978,6 +978,6 @@
 	/*Loading svg*/
 	circle
 	{
-		stroke: var(--main-color) !important;
+		stroke: var(--main-text) !important;
 	}
 }
