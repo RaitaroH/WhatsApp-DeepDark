@@ -4,7 +4,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.1.8*/
+/*1.1.9*/
 
 	/*Main color variables*/
 	:root
@@ -222,7 +222,7 @@
 		text-decoration: none !important;
 	}
 
-	body, html, .pane-chat-footer, #startup, #initial_startup, .backdrop.backdrop-cover
+	body, html, .pane-chat-footer, #startup, #initial_startup, .backdrop.backdrop-cover, .backdrop-transparent
 	{
 		background-color: var(--second-background) !important;
 		color: var(--dimer-text) !important;
