@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.2.1
+@version 1.2.2
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description WhatsApp dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.1*/
+/*1.2.2*/
 
 	/*Main color variables*/
 	:root
@@ -1010,6 +1010,16 @@
 		background-color: var(--main-background) !important;
 	}
 
+	/*Add a caption*/
+	._7HWvs
+	{
+		color: var(--dimer-text) !important;
+	}
+	/*Border*/
+	html[dir] ._2Mg6D .CzI8E
+	{
+		border-color: var(--main-color) !important;
+	}
 
 	/*Send contacts*/
 	.drawer-header-popup, .drawer-controls-summary
