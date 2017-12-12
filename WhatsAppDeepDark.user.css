@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.2.2
+@version 1.2.3
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description WhatsApp dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.2*/
+/*1.2.3*/
 
 	/*Main color variables*/
 	:root
@@ -1065,7 +1065,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.quoted-msg-text
+	.quoted-msg-text, .emojitext.quoted-mention
 	{
 		color: var(--dimer-text) !important;
 	}
