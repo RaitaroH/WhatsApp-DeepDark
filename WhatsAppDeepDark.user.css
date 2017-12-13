@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.2.3
+@version 1.2.4
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description WhatsApp dark theme
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.3*/
+/*1.2.4*/
 
 	/*Main color variables*/
 	:root
@@ -572,7 +572,7 @@
 		border-color: var(--hover-background) !important;
 	}
 
-	.three .pane-chat-body, .three .pane-chat-footer, .three .pane-chat-header
+	.three .pane-chat-body, .three .pane-chat-footer, .three .pane-chat-header, html[dir] ._14oqx + ._14oqx .DcItJ
 	{
 		border-color: var(--hover-background) !important;
 	}
@@ -765,7 +765,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2
+	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg
 	{
 		color: var(--dimer-text) !important;
 	}
@@ -814,6 +814,22 @@
 		fill-opacity: 1 !important;
 	}
 	
+	/*@ theming*/
+	.Uukb4
+	{
+		background-color: var(--main-background) !important;
+		border-color: var(--hover-background) !important;
+	}
+	html[dir] ._3v_lq
+	{
+		background-color: var(--hover-background) !important;
+	}
+	.message-out .matched-mention .at-symbol
+	{
+		color: var(--main-text) !important;
+	}
+
+
 	/*SVGs for audio and gifs*/
 	span[data-icon="audio-file"] svg path[fill="#FFAD1F"], span[data-icon="media-gif"] svg path[fill="#263238"]
 	{
