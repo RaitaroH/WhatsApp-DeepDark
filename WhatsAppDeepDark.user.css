@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.2.5
+@version 1.2.6
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.5*/
+/*1.2.6*/
 
 	/*Main color variables*/
 	:root
@@ -738,7 +738,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.message-in, .message-in .document-body, .link-preview-container .link-preview-body
+	.message-in, .message-in .document-body, .link-preview-container .link-preview-body, html[dir] ._2CORf ._12xX7
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -765,7 +765,7 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg
+	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg, .PyPig
 	{
 		color: var(--dimer-text) !important;
 	}
@@ -799,7 +799,7 @@
 	{
 		background: var(--main-color) !important;
 	}
-	.message-out .audio-track::-moz-range-track
+	.message-out .audio-track::-moz-range-track, html[dir] ._1kZiz ._3geJ8::-moz-range-track
 	{
 		background: var(--dimer-text) !important;
 	}
