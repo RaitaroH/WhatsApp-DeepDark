@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.2.6
+@version 1.2.7
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.6*/
+/*1.2.7*/
 
 	/*Main color variables*/
 	:root
@@ -738,7 +738,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.message-in, .message-in .document-body, .link-preview-container .link-preview-body, html[dir] ._2CORf ._12xX7
+	.message-in, .message-in .document-body, .link-preview-container .link-preview-body, html[dir] ._2CORf ._12xX7, html[dir] ._1sGGp._2nFG1
 	{
 		background-color: var(--hover-background) !important;
 	}
@@ -761,11 +761,11 @@
 	{
 		display: none !important;
 	}
-	.selectable-text, .document-text .ellipsify, .document-text .starred-title-main, .document-text .multi-count
+	.selectable-text, .document-text .ellipsify, .document-text .starred-title-main, .document-text .multi-count, html[dir] ._1Wp9N ._3zVOv, ._3zVOv
 	{
 		color: var(--main-text) !important;
 	}
-	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg, .PyPig
+	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg, .PyPig, ._1Wp9N ._3QqKs, ._3QqKs, html[dir] ._16y6t
 	{
 		color: var(--dimer-text) !important;
 	}
