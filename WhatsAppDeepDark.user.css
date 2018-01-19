@@ -859,7 +859,7 @@
 	}
 
 	/*Message compose*/
-	.block-compose
+	.block-compose, html[dir] ._3XpR2
 	{
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
@@ -883,7 +883,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.menu-tabs-marker, html[dir] ._3XpR2
+	.menu-tabs-marker
 	{
 		background-color: var(--main-color) !important;
 	}
