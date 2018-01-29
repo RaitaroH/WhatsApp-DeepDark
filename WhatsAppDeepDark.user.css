@@ -333,13 +333,14 @@
 		color: var(--main-text) !important;
 	}
 
-	/*FUCK IT*/	
+	/*FUCK IT	
 	*, *:before, *:after
 	{
 		background-color: transparent !important;
 		border-color: transparent !important;
 		box-shadow: none !important;
-	}
+	}*/
+	/*Yeah...*/
 
 	/*Links*/
  	a
