@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.3.0
+@version 1.3.1
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.0*/
+/*1.3.1*/
 
 	/*Main color variables*/
 	:root
@@ -340,6 +340,10 @@
 		border-color: var(--hover-background) !important;
 		color: var(--main-text) !important;
 		box-shadow: none !important;
+	}
+	.copyable-area
+	{
+		background-color: var(--main-background) !important;
 	}
 	span svg path
 	{
