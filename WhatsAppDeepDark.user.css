@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.2.9
+@version 1.3.0
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.2.9*/
+/*1.3.0*/
 
 	/*Main color variables*/
 	:root
@@ -333,14 +333,27 @@
 		color: var(--main-text) !important;
 	}
 
-	/*FUCK IT	
+	/*FUCK IT*/
 	*, *:before, *:after
 	{
 		background-color: transparent !important;
-		border-color: transparent !important;
+		border-color: var(--hover-background) !important;
+		color: var(--main-text) !important;
 		box-shadow: none !important;
-	}*/
-	/*Yeah...*/
+	}
+	span svg path
+	{
+		fill: var(--main-text) !important;
+	}
+	span svg g path,
+	span svg:hover path
+	{
+		fill: var(--main-color) !important;
+	}
+	button span svg g path, button span svg:hover g path
+	{
+		fill: var(--main-background) !important;
+	}
 
 	/*Links*/
  	a
@@ -364,10 +377,11 @@
 		text-decoration: none !important;
 	}
 
-	body, html, .pane-chat-footer, #startup, #initial_startup, .backdrop.backdrop-cover, .backdrop-transparent
+	body, html, .pane-chat-footer, #startup, #initial_startup, .backdrop.backdrop-cover, .backdrop-transparent, html[dir] ._1CnF3
 	{
 		background: var(--hover-background) !important;
 		color: var(--dimer-text) !important;
+		box-shadow: var(--shadow);
 	}
 	progress
 	{
@@ -444,7 +458,7 @@
 	}
 
 	/*Header*/
-	.pane-header.pane-list-header, .pane-header
+	.pane-header.pane-list-header, .pane-header, ._3AwwN, html[dir] ._3auIg
 	{
 		background-color: var(--main-background) !important;
 	}
@@ -481,9 +495,10 @@
 	{
 		fill: var(--main-color) !important;
 	}
-	.attach-menu-container g path, .attach-menu-container:hover g path
+	.attach-menu-container g path, .attach-menu-container:hover g path,
+	.GK4Lv:hover span svg g path
 	{
-		fill: var(--second-background) !important;
+		fill: var(--main-background) !important;
 	}
 
 
@@ -504,11 +519,11 @@
 
 
 	/*Sidebar*/
-	.chat, .chatlist-main, .chatlist-panel .chatlist-panel-body
+	.chat, .chatlist-main, .chatlist-panel .chatlist-panel-body, html[dir] ._1NrpZ, html[dir] ._2EXPL
 	{
 		background-color: var(--main-background) !important;
 	}
-	.chatlist .chat:hover, .chatlist .chat.hover, .chatlist .chat.active
+	.chatlist .chat:hover, .chatlist .chat.hover, .chatlist .chat.active, html[dir] ._2EXPL._1f1zm, html[dir] ._2EXPL:hover
 	{
 		background-color: var(--hover-background) !important;
 		border-color: var(--hover-background) !important;
@@ -555,12 +570,12 @@
 	}
 
 	/*Search*/
-	.chatlist-panel-search, .cont-input-search, .list-search .input-search, html[dir] ._2MSJr, #input-chatlist-search, html[dir] .gQzdc._3sdhb
+	.chatlist-panel-search, .cont-input-search, .list-search .input-search, html[dir] ._2MSJr, #input-chatlist-search, html[dir] .gQzdc._3sdhb, html[dir] ._3oju3
 	{
 		background-color: var(--main-background) !important;
 		border-color: var(--hover-background) !important;
 	}
-	.section-header
+	.section-header, html[dir] ._2bXVy
 	{
 		background-color: var(--second-background) !important;
 		border-color: var(--hover-background) !important;
@@ -864,6 +879,10 @@
 		fill: var(--main-color) !important;
 		fill-opacity: 1 !important;
 	}
+	html[dir] ._1kZiz ._3geJ8::-moz-range-thumb
+	{
+		background: var(--main-color) !important;
+	}
 
 	/*Select messages*/
 	.multi-controls, html[dir] ._2FsQ8
@@ -901,7 +920,7 @@
 	{
 		background-color: var(--hover-background) !important;
 	}
-	.menu-tabs-marker
+	.menu-tabs-marker, html[dir] ._1qXED
 	{
 		background-color: var(--main-color) !important;
 	}
@@ -935,7 +954,7 @@
 		filter: brightness(120%);
 	}
 	/*Tried to make the background of the emoji a bit less noticable*/
-	.emoji-panel .emojik
+	.emoji-panel .emojik, html[dir] ._8VLs0 .emojik
 	{
 		border-radius: 100% !important;
 	}
@@ -1159,11 +1178,11 @@
 
 
 	/*Default avatar svgs*/
-	div[class="avatar-default"] span svg path[fill="#DFE5E7"]
+	div span[data-icon="default-user"] svg path[fill="#DFE5E7"], div span[data-icon="default-group"] svg path[fill="#DFE5E7"]
 	{
 		fill: var(--second-background) !important;
 	}
-	div[class="avatar-default"] span svg g[fill="#FFF"] path, div[class="avatar-default"] span svg path[fill="#FFF"]
+	div span[data-icon="default-user"] svg g[fill="#FFF"] path, div span[data-icon="default-group"] svg path[fill="#FFF"]
 	{
 		fill: var(--main-color) !important;
 	}
