@@ -341,7 +341,7 @@
 		color: var(--main-text) !important;
 		box-shadow: none !important;
 	}
-	.copyable-area
+	.copyable-area, html[dir] ._3_R6X
 	{
 		background-color: var(--main-background) !important;
 	}
