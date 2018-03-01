@@ -345,16 +345,16 @@
 	{
 		background-color: var(--main-background) !important;
 	}
-	span svg path
+	span:not([data-icon*="logo"]) svg path
 	{
 		fill: var(--main-text) !important;
 	}
-	span svg g path,
-	span svg:hover path
+	span:not([data-icon*="logo"]) svg g path,
+	span:not([data-icon*="logo"]) svg:hover path
 	{
 		fill: var(--main-color) !important;
 	}
-	button span svg g path, button span svg:hover g path
+	button span:not([data-icon*="logo"]) svg g path, button span svg:hover g path
 	{
 		fill: var(--main-background) !important;
 	}
