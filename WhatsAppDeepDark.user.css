@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.3.2
+@version 1.3.3
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0*/
 
-/*1.3.2*/
+/*1.3.3*/
 
 	/*Main color variables*/
 	:root
@@ -964,7 +964,7 @@
 		filter: brightness(120%);
 	}
 	/*Tried to make the background of the emoji a bit less noticable*/
-	.emoji-panel .emojik, html[dir] ._8VLs0 .emojik
+	*.emojik
 	{
 		border-radius: 100% !important;
 	}
