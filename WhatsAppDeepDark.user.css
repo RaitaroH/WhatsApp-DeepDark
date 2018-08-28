@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace github.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
-@version 1.3.6
+@version 1.3.7
 @updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -26,8 +26,10 @@
 	"Ubuntu_grey": "#EF7847",
 	"Ubuntu_purple": "#EF7847",
 	"Orange": "#ff6905",
-	"Jisho_夜明け":  "#EF7D6C"
+	"Jisho_夜明け": "#EF7D6C",
+	"Custom": "/*[[custom-main-color]]*\/"
 }
+@var color custom-main-color "Custom main color" #00adee"
 
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
@@ -46,8 +48,10 @@
 	"Ubuntu_grey": "#312D2A",
 	"Ubuntu_purple": "#2C071A",
 	"Orange": "#0a0400",
-	"Jisho_夜明け": "#332222"
+	"Jisho_夜明け": "#332222",
+	"Custom": "/*[[custom-main-background]]*\/"
 }
+@var color custom-main-background "Custom main background" "#111111"
 
 @var select secondBackground 'Second background color' {
 	"DeepDark": "#181818",
@@ -66,8 +70,10 @@
 	"Ubuntu_grey": "#3D3C38",
 	"Ubuntu_purple": "#430B28",
 	"Orange": "#0e0702",
-	"Jisho_夜明け": "#2A1B1B"
+	"Jisho_夜明け": "#2A1B1B",
+	"Custom": "/*[[custom-second-background]]*\/"
 }
+@var color custom-second-background "Custom second background" "#181818"
 
 @var select hoverBackground 'Hover background color' {
 	"DeepDark": "#232323",
@@ -86,8 +92,10 @@
 	"Ubuntu_grey": "#59564D",
 	"Ubuntu_purple": "#520D30",
 	"Orange": "#110903",
-	"Jisho_夜明け": "#863B2F"
+	"Jisho_夜明け": "#863B2F",
+	"Custom": "/*[[custom-hover-background]]*\/"
 }
+@var color custom-hover-background "Custom hover background" "#232323"
 
 @var select mainText 'Main text color' {
 	"DeepDark": "#eff0f1",
@@ -106,10 +114,12 @@
 	"Ubuntu_grey": "#F2F1EF",
 	"Ubuntu_purple": "#F2F1EF",
 	"Orange": "#fff9f5",
-	"Jisho_夜明け": "#EFB26C"
+	"Jisho_夜明け": "#EFB26C",
+	"Custom": "/*[[custom-main-text]]*\/"
 }
+@var color custom-main-text "main-text" "#eff0f1"
 
-@var select dimerText 'Secondary text color' {
+@var select dimmerText 'Secondary text color' {
 	"DeepDark": "#CCCCCC",
 	"BreezeDark": "#bdc3c7",
 	"Vertex Dark": "#AEAFB0",
@@ -126,8 +136,10 @@
 	"Ubuntu_grey": "#E6E5E3",
 	"Ubuntu_purple": "#E6E5E3",
 	"Orange": "#ffede1",
-	"Jisho_夜明け": "#986E3F"
+	"Jisho_夜明け": "#986E3F",
+	"Custom": "/*[[custom-dimmer-text]]*\/"
 }
+@var color custom-dimmer-text "dimmer-text" "#CCCCCC"
 
 ==/UserStyle== */
 
@@ -136,8 +148,6 @@
 /*Theme made by RaitaroH @https://github.com/RaitaroH/WhatsApp-DeepDark*/
 
 /*GNU General Public License v3.0*/
-
-/*1.3.6*/
 
 	/*Main color variables*/
 	:root
@@ -148,7 +158,7 @@
 		--second-background: /*[[secondBackground]]*/;
 		--hover-background: /*[[hoverBackground]]*/;
 		--main-text: /*[[mainText]]*/;
-		--dimer-text: /*[[dimerText]]*/;
+		--dimmer-text: /*[[dimmerText]]*/;
 
 		/*DeepDark colors*/
 		/*
@@ -157,7 +167,7 @@
 		--second-background: #181818;
 		--hover-background: #232323;
 		--main-text: #eff0f1;
-		--dimer-text: #CCCCCC;
+		--dimmer-text: #CCCCCC;
 		*/
 
 		/*KDE colors*/
@@ -167,7 +177,7 @@
 		--second-background: #2a2e32;
 		--hover-background: #31363b;
 		--main-text: #eff0f1;
-		--dimer-text: #bdc3c7;
+		--dimmer-text: #bdc3c7;
 		*/
 
 		/*Vertex Dark colors*/
@@ -177,7 +187,7 @@
 		--second-background: #353638;
 		--hover-background: #515254;
 		--main-text: #F3F3F5;
-		--dimer-text: #AEAFB0;
+		--dimmer-text: #AEAFB0;
 		*/
 
 		/*Arc Dark colors*/
@@ -187,7 +197,7 @@
 		--second-background: #383C4A;
 		--hover-background: #414A59;
 		--main-text: #C1C8D1;
-		--dimer-text: #B3BAC5;
+		--dimmer-text: #B3BAC5;
 		*/
 
 		/*Firefox Dark colors*/
@@ -197,7 +207,7 @@
 		--second-background: #181D20;
 		--hover-background: #353A44;
 		--main-text: #E3EEF9;
-		--dimer-text: #606376;
+		--dimmer-text: #606376;
 		*/
 
 		/*Firefox57 Dark colors*/
@@ -207,7 +217,7 @@
 		--second-background: #252526;
 		--hover-background: #323234;
 		--main-text: #F9F9FA;
-		--dimer-text: #D0D0D0;
+		--dimmer-text: #D0D0D0;
 		*/
 
 		/*Discord colors*/
@@ -217,7 +227,7 @@
 		--second-background: #2F3136;
 		--hover-background: #484B51;
 		--main-text: #FFFFFF;
-		--dimer-text: #ADA8AA;
+		--dimmer-text: #ADA8AA;
 		*/
 
 		/*YouTube dark colors*/
@@ -227,7 +237,7 @@
 		--second-background: #232323;
 		--hover-background: #343434;
 		--main-text: #E1E1E1;
-		--dimer-text: #7F7F7F;
+		--dimmer-text: #7F7F7F;
 		*/
 
 		/*Mint-Y-Dark colors*/
@@ -237,7 +247,7 @@
 		--second-background: #383838;
 		--hover-background: #404040;
 		--main-text: #FFFFFF;
-		--dimer-text: #D5DADA;
+		--dimmer-text: #D5DADA;
 		*/
 
 		/*9anime colors*/
@@ -247,7 +257,7 @@
 		--second-background: #17151C;
 		--hover-background: #1E1C25;
 		--main-text: #B4B4B4;
-		--dimer-text: #747474;
+		--dimmer-text: #747474;
 		*/
 
 		/*Black and white*/
@@ -257,7 +267,7 @@
 		--second-background: #0a0a0a;
 		--hover-background: #0f0f0f;
 		--main-text: #b4b4b4;
-		--dimer-text: #828282;
+		--dimmer-text: #828282;
 		*/
 
 		/*Yellow (colors from petrocompletions)*/
@@ -267,7 +277,7 @@
 		--second-background: #202222;
 		--hover-background: #353838;
 		--main-text: #EFF0F1;
-		--dimer-text: #9F9999;
+		--dimmer-text: #9F9999;
 		*/
 
 		/*Yellow 2*/
@@ -277,7 +287,7 @@
 		--second-background: #0c0a04;
 		--hover-background: #0f0d05;
 		--main-text: #fffdf5;
-		--dimer-text: #fff8e1;
+		--dimmer-text: #fff8e1;
 		*/
 
 		/*Ubuntu grey colors*/
@@ -287,7 +297,7 @@
 		--second-background: #3D3C38;
 		--hover-background: #59564D;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Ubuntu purple colors*/
@@ -297,7 +307,7 @@
 		--second-background: #430B28;
 		--hover-background: #520D30;
 		--main-text: #F2F1EF;
-		--dimer-text: #E6E5E3;
+		--dimmer-text: #E6E5E3;
 		*/
 
 		/*Orange*/
@@ -307,7 +317,7 @@
 		--second-background: #0e0702;
 		--hover-background: #110903;
 		--main-text: #fff9f5;
-		--dimer-text: #ffede1;
+		--dimmer-text: #ffede1;
 		*/
 
 		/*Jisho 夜明け colors https://userstyles.org/styles/115621/jisho*/
@@ -317,7 +327,7 @@
 		--second-background: #2A1B1B;
 		--hover-background: #863B2F;
 		--main-text: #EFB26C;
-		--dimer-text: #986E3F;
+		--dimmer-text: #986E3F;
 		*/
 	}
 
@@ -401,7 +411,7 @@
 	body, html, .pane-chat-footer, #startup, #initial_startup, .backdrop.backdrop-cover, .backdrop-transparent, html[dir] ._1CnF3
 	{
 		background: var(--hover-background) !important;
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 		box-shadow: var(--shadow);
 	}
 	progress
@@ -432,7 +442,7 @@
 	}
 	.popup .text-tip a, .popup .text-tip
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.btn-plain, ._1qi0v
 	{
@@ -497,7 +507,7 @@
 	}
 	.Gd51Q._3sgkv
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.pane-chat-header .chat-body
 	{
@@ -561,7 +571,7 @@
 	}
 	.chat-meta, .chat-secondary, .header-secondary
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.avatar
 	{
@@ -654,7 +664,7 @@
 	}
 	.title
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.drawer-section-title
 	{
@@ -676,7 +686,7 @@
 	}
 	.menu-tabs.menu-tabs-lists .menu-item, .link-preview-container .link-preview-source, .link-preview-container .link-preview-description
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.link-preview-container .link-preview-title
 	{
@@ -725,7 +735,7 @@
 	}
 	.Cpiae, ._3LL06
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	html[dir] ._1CkkN + ._1CkkN ._10xEB, html[dir] ._1CkkN:hover + ._1CkkN::before
 	{
@@ -827,7 +837,7 @@
 	}
 	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg, .PyPig, ._1Wp9N ._3QqKs, ._3QqKs, html[dir] ._16y6t
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.message-out .selectable-text
 	{
@@ -861,7 +871,7 @@
 	}
 	.message-out .audio-track::-moz-range-track, html[dir] ._1kZiz ._3geJ8::-moz-range-track
 	{
-		background: var(--dimer-text) !important;
+		background: var(--dimmer-text) !important;
 	}
 	.QnDup > span:nth-child(1) > svg:nth-child(1) > path:nth-child(2)
 	{
@@ -970,7 +980,7 @@
 	}
 	.emoji-panel-title, input.input-emoji-search, ._3KEhc
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.compose-box-items-overlay-container
 	{
@@ -1053,7 +1063,7 @@
 	}
 	.media-content .media-caption, .media-chat .chat-main, .media-chat .header-main, .text-input .label-text
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.drawer-header-offset, .btn-fill, .send-logs-screenshots .send-logs-screenshots-action
 	{
@@ -1093,7 +1103,7 @@
 	/*Add a caption*/
 	._7HWvs
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	/*Border*/
 	html[dir] ._2Mg6D .CzI8E
@@ -1115,7 +1125,7 @@
 	}
 	.starred-title-meta
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.starred-chevron-icon span svg path
 	{
@@ -1147,7 +1157,7 @@
 	}
 	.quoted-msg-text, .emojitext.quoted-mention
 	{
-		color: var(--dimer-text) !important;
+		color: var(--dimmer-text) !important;
 	}
 	.color-1
 	{
