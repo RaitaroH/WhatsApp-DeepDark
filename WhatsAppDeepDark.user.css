@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name WhatsApp DeepDark
-@namespace github.com/RaitaroH/WhatsApp-DeepDark
-@homepageURL https://github.com/RaitaroH/WhatsApp-DeepDark
+@namespace gitlab.com/RaitaroH/WhatsApp-DeepDark
+@homepageURL https://gitlab.com/RaitaroH/WhatsApp-DeepDark
 @version 1.3.7
-@updateURL https://rawgit.com/RaitaroH/WhatsApp-DeepDark/master/WhatsAppDeepDark.user.css
+@updateURL https://gitlab.com/RaitaroH/WhatsApp-DeepDark/raw/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
 @license GNU-V3.0
@@ -145,7 +145,7 @@
 
 @-moz-document domain("whatsapp.com") {
 
-/*Theme made by RaitaroH @https://github.com/RaitaroH/WhatsApp-DeepDark*/
+/*Theme made by RaitaroH @https://gitlab.com/RaitaroH/WhatsApp-DeepDark*/
 
 /*GNU General Public License v3.0*/
 
@@ -477,7 +477,7 @@
 	}
 	.intro-image, [data-asset-intro-image]
 	{
-		background-image: url(https://raw.githubusercontent.com/RaitaroH/WhatsApp-DeepDark/master/Images/intro-image.png) !important;
+		background-image: url(https://raw.githubusercontent.com/RaitaroH/WhatsApp-DeepDark/raw/master/Images/intro-image.png) !important;
 	}
 	.intro .intro-title, .iHhHL
 	{
