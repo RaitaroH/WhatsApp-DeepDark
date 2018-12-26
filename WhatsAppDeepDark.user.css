@@ -2,7 +2,7 @@
 @name WhatsApp DeepDark
 @namespace gitlab.com/RaitaroH/WhatsApp-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/WhatsApp-DeepDark
-@version 1.3.7
+@version 1.3.8
 @updateURL https://gitlab.com/RaitaroH/WhatsApp-DeepDark/raw/master/WhatsAppDeepDark.user.css
 @description  Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
 @author RaitaroH
@@ -835,7 +835,8 @@
 	{
 		color: var(--main-text) !important;
 	}
-	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg, .PyPig, ._1Wp9N ._3QqKs, ._3QqKs, html[dir] ._16y6t
+	.message-meta, .document-meta, .audio-duration, ._1DZAH, .DYGf2, .revoked-outgoing .placeholder-msg, .PyPig, ._1Wp9N ._3QqKs, ._3QqKs, html[dir] ._16y6t,
+	._3Ye_R._1wjpf._1OmDL
 	{
 		color: var(--dimmer-text) !important;
 	}
