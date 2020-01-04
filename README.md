@@ -1,3 +1,6 @@
+# Archival notice
+Due to a combination of factors such as not having enough time, whatsapp being really hard to theme / changes often, and the existence of my friend's vednoc [dark-whatsapp](https://github.com/vednoc/dark-whatsapp), I decided to archive this theme. If you like the deepdark/breezedark colors feel free to check out vednoc's [dark-switcher](https://gitlab.com/vednoc/dark-switcher).
+
 # WhatsApp-DeepDark
 ![alt tag](./Images/WhatsApp%20-%20DeepDark.png)
 Talk with thy friends in the dark. May the dark be kinder on thine eyes. (WhatsApp dark theme)
